@@ -9,8 +9,8 @@ var cssGenerator = require("./cssGenerator");
 
 var allFormats = ["ttf", "eot", "woff", "woff2", "svg"];
 var allStyles = [
-  "100",       "300",       "400",       "700",       "900",
-  "100italic", "300italic", "400italic", "700italic", "900italic",
+  "100", "200", "300", "400", "500", "600", "700", "800", "900",
+  "100italic", "200italic", "300italic", "400italic", "500italic", "600italic", "700italic", "800italic", "900italic",
 ];
 
 function googWebFontDl(options) {
