@@ -62,7 +62,7 @@ function generateCSS(options, parsingResults) {
 
             // special handling for eot (ie 9)
             if (weightObj.urls["embedded-opentype"]) {
-              cssOut.write("  src: url(" + weightObj.urls["embedded-opentype"] + ");\n");
+              cssOut.write("  src: url('" + weightObj.urls["embedded-opentype"] + "');\n");
             }
             cssOut.write("  src: ");
 
@@ -97,7 +97,7 @@ function generateCSS(options, parsingResults) {
               else {
                 addComma = true;
               }
-              cssOut.write("url(" + url + ") format('" + format + "')");
+              cssOut.write("url('" + url + "') format('" + format + "')");
             }
             cssOut.write(";\n");
 
